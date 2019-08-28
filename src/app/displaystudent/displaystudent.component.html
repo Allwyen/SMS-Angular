@@ -1,3 +1,20 @@
-<p>
-  displaystudent works!
-</p>
+<table class="table">
+  <tr>
+    <th>AdmNo</th>
+    <th>RollNo</th>
+    <th>Name</th>
+    <th>College</th>
+    <th>Branch</th>
+    <th>DoB</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let data of mydata">
+    <td>{{data.sadmno}}</td>
+    <td>{{data.srollno}}</td>
+    <td>{{data.sname}}</td>
+    <td>{{data.scollege}}</td>
+    <td>{{data.sbranch}}</td>
+    <td>{{data.sdob}}</td>
+    <td>{{data.semail}}</td>
+  </tr>
+</table>

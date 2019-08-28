@@ -8,10 +8,11 @@ import { ApiService } from '../api.service';
 })
 export class AddstudentComponent implements OnInit {
 
+  private mydata:Array<object> = [];
+
   onSubmit(data:NgForm)
   {
-    console.log(data.value);
-    this.apiservice.addstudentdata(data.value).subscribe((response)=>{
+    this.apiservice.addstudentdata(data.value).subscribe((response:Array<object>)=>{
       console.log(response);
     });
   }

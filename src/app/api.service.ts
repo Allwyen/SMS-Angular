@@ -10,6 +10,24 @@ export class ApiService {
 
   addstudentdata(data)
   {
-    return this.http.post("http://sms-nem.herokuapp.com/insertstud",data);
+    return this.http.post("http://localhost:4579/insertstud",data);
+  }
+
+  viewstudentdata()
+  {
+    return this.http.get("http://localhost:4579/viewstud");
+  }
+  
+  searchstudentdata(data)
+  {
+    return this.http.post("http://localhost:4579/searchstud",data);
+  }
+  deletestudentdata(data)
+  {
+    return this.http.post("http://localhost:4579/deletestud",data);
+  }
+  updatestudentdata(data)
+  {
+    return this.http.post("http://localhost:4579/updatestud",data);
   }
 }

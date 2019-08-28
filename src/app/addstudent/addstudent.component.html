@@ -1,12 +1,12 @@
 <form (ngSubmit)=onSubmit(f) #f="ngForm">
   <table class="table">
-    <tr><td>Adm No</td><td><input type="text" name="sadmno" class="form-control" id=""></td></tr>
-    <tr><td>Roll No</td><td><input type="text" name="srollno" class="form-control" id=""></td></tr>
-    <tr><td>Name</td><td><input type="text" name="sname" class="form-control" id=""></td></tr>
-    <tr><td>College</td><td><input type="text" name="scollege" class="form-control" id=""></td></tr>
-    <tr><td>Branch</td><td><input type="text" name="sbranch" class="form-control" id=""></td></tr>
-    <tr><td>DoB</td><td><input type="date" name="sdob" class="form-control" id=""></td></tr>
-    <tr><td>Email</td><td><input type="email" name="semail" class="form-control" id=""></td></tr>
+    <tr><td>Adm No</td><td><input type="text" name="sadmno" class="form-control" id="" ngModel></td></tr>
+    <tr><td>Roll No</td><td><input type="text" name="srollno" class="form-control" id="" ngModel></td></tr>
+    <tr><td>Name</td><td><input type="text" name="sname" class="form-control" id="" ngModel></td></tr>
+    <tr><td>College</td><td><input type="text" name="scollege" class="form-control" id="" ngModel></td></tr>
+    <tr><td>Branch</td><td><input type="text" name="sbranch" class="form-control" id="" ngModel></td></tr>
+    <tr><td>DoB</td><td><input type="date" name="sdob" class="form-control" id="" ngModel></td></tr>
+    <tr><td>Email</td><td><input type="email" name="semail" class="form-control" id="" ngModel></td></tr>
     <tr><td></td><td><input type="submit" class="btn btn-primary" value="Add Student"></td></tr>
   </table>
 </form>

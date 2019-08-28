@@ -1,0 +1,20 @@
+<form (ngSubmit)=onSubmit(f) #f="ngForm">
+  <table class="table">
+    <tr><td>RollNo</td><td><input type="text" class="form-control" name="srollno" id="" ngModel></td></tr>
+    <tr><td></td><td><input type="submit" class="btn btn-primary" value="Search"></td></tr>
+  </table>
+</form>
+
+<table class="table">
+  <div *ngFor="let data of mydata">
+    <tr><td></td><td><input type="hidden" name="sid" [(ngModel)]="data._id"></td></tr>
+    <tr><td>Adm No</td><td><input type="text" name="sadmno" class="form-control" id="" [(ngModel)]="data.sadmno"></td></tr>
+    <tr><td>Roll No</td><td><input type="text" name="srollno" class="form-control" id="" [(ngModel)]="data.srollno"></td></tr>
+    <tr><td>Name</td><td><input type="text" name="sname" class="form-control" id="" [(ngModel)]="data.sname"></td></tr>
+    <tr><td>College</td><td><input type="text" name="scollege" class="form-control" id="" [(ngModel)]="data.scollege"></td></tr>
+    <tr><td>Branch</td><td><input type="text" name="sbranch" class="form-control" id="" [(ngModel)]="data.sbranch"></td></tr>
+    <tr><td>DoB</td><td><input type="date" name="sdob" class="form-control" id="" [(ngModel)]="data.sdob"></td></tr>
+    <tr><td>Email</td><td><input type="email" name="semail" class="form-control" id="" [(ngModel)]="data.semail"></td></tr>
+    <tr><td><input type="button" (click)="deletestudent()" class="btn btn-danger" value="Delete"></td><td><input type="button" (click)="updatestudent()" class="btn btn-primary" value="Update"></td></tr>
+  </div>
+</table>
